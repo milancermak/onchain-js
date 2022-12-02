@@ -1,0 +1,9 @@
+%lang starknet
+
+@view
+func $func_name() -> (code_len: felt, code: felt*) {
+    tempvar code: felt* = new (
+        $code
+    );
+    return ($code_len, code);
+}
